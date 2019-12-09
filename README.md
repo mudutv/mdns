@@ -9,9 +9,9 @@
   <a href="https://pion.ly/slack"><img src="https://img.shields.io/badge/join-us%20on%20slack-gray.svg?longCache=true&logo=slack&colorB=brightgreen" alt="Slack Widget"></a>
   <br>
   <a href="https://travis-ci.org/pion/mdns"><img src="https://travis-ci.org/pion/mdns.svg?branch=master" alt="Build Status"></a>
-  <a href="https://godoc.org/github.com/pion/mdns"><img src="https://godoc.org/github.com/pion/mdns?status.svg" alt="GoDoc"></a>
+  <a href="https://godoc.org/github.com/mudutv/mdns"><img src="https://godoc.org/github.com/mudutv/mdns?status.svg" alt="GoDoc"></a>
   <a href="https://codecov.io/gh/pion/mdns"><img src="https://codecov.io/gh/pion/mdns/branch/master/graph/badge.svg" alt="Coverage Status"></a>
-  <a href="https://goreportcard.com/report/github.com/pion/mdns"><img src="https://goreportcard.com/badge/github.com/pion/mdns" alt="Go Report Card"></a>
+  <a href="https://goreportcard.com/report/github.com/mudutv/mdns"><img src="https://goreportcard.com/badge/github.com/mudutv/mdns" alt="Go Report Card"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 <br>
@@ -53,7 +53,7 @@ We are always looking to support **your projects**. Please reach out if you have
 If you need commercial support or don't want to use public methods you can contact us at [team@pion.ly](mailto:team@pion.ly)
 
 ### Contributing
-Check out the **[contributing wiki](https://github.com/pion/webrtc/wiki/Contributing)** to join the group of amazing people making this project possible:
+Check out the **[contributing wiki](https://github.com/mudutv/webrtc/wiki/Contributing)** to join the group of amazing people making this project possible:
 
 * [Sean DuBois](https://github.com/Sean-Der) - *Original Author*
 * [Konstantin Itskov](https://github.com/trivigy) - Contributor
