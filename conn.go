@@ -42,6 +42,7 @@ const (
 	defaultQueryInterval = time.Second
 	destinationAddress   = "224.0.0.251:5353"
 	maxMessageRecords    = 3
+	responseTTL          = 120
 )
 
 // Server establishes a mDNS connection over an existing conn
@@ -68,7 +69,6 @@ func Server(conn *ipv4.PacketConn, config *Config) (*Conn, error) {
 	dstAddr, err := net.ResolveUDPAddr("udp", destinationAddress)
 	if err != nil {
 		return nil, err
-
 	}
 
 	loggerFactory := config.LoggerFactory
@@ -220,6 +220,7 @@ func (c *Conn) sendAnswer(name string, dst net.IP) {
 					Type:  dnsmessage.TypeA,
 					Class: dnsmessage.ClassINET,
 					Name:  packedName,
+					TTL:   responseTTL,
 				},
 				Body: &dnsmessage.AResource{
 					A: ipToBytes(dst),
@@ -276,7 +277,6 @@ func (c *Conn) start() {
 
 				for _, localName := range c.localNames {
 					if localName == q.Name.String() {
-
 						localAddress, err := interfaceForRemote(src.String())
 						if err != nil {
 							c.log.Warnf("Failed to get local interface to communicate with %s: %v", src.String(), err)
